@@ -6,7 +6,7 @@ const env = require('./modules/env')
 async function scan() {
   try {
     // Sendgrid instance
-    const sendGrid = new SendGrid()
+    //const sendGrid = new SendGrid()
 
     // Build web3 instance
     const ethereumInstance = new Web3Factory(env.ETHEREUM_RPC_NODE, 'ethereum')
