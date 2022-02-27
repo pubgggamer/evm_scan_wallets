@@ -1,6 +1,6 @@
 const { spinner } = require('./utils')
 const { Web3Factory } = require('./modules/web3Factory')
-const { SendGrid } = require('./modules/sendGrid')
+//const { SendGrid } = require('./modules/sendGrid')
 const env = require('./modules/env')
 
 async function scan() {
@@ -20,7 +20,7 @@ async function scan() {
         const ethereumScanResult = await ethereumInstance.scanNetwork()
         if (ethereumScanResult.balance) {
           console.log(ethereumScanResult)
-          await sendGrid.sendEmail(ethereumScanResult)
+          //await sendGrid.sendEmail(ethereumScanResult)
           break
         }
       } catch (error) {
