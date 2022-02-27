@@ -35,4 +35,4 @@ async function scan() {
   }
 }
 
-scan()
+//scan()
